@@ -38,10 +38,10 @@ include('head.php'); ?>
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image\_107317099_blooddonor976.jpg" alt="image\_107317099_blooddonor976.jpg" width="100%" height="500">
+        <img src="image/_107317099_blooddonor976.jpg" alt="image/_107317099_blooddonor976.jpg" width="100%" height="500">
       </div>
       <div class="carousel-item">
-        <img src="image\Blood-facts_10-illustration-graphics__canteen.png" alt="image\Blood-facts_10-illustration-graphics__canteen.png" width="100%" height="500">
+        <img src="image/Blood-facts_10-illustration-graphics__canteen.png" alt="image/Blood-facts_10-illustration-graphics__canteen.png" width="100%" height="500">
       </div>
 
     </div>
@@ -133,7 +133,7 @@ include('head.php'); ?>
            ?>
             <div class="col-lg-4 col-sm-6 portfolio-item" ><br>
             <div class="card" style="width:300px">
-                <img class="card-img-top" src="image\blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px">
+                <img class="card-img-top" src="image/blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px">
                 <div class="card-body">
                   <h3 class="card-title"><?php echo $row['donor_name']; ?></h3>
                   <p class="card-text">
@@ -171,7 +171,7 @@ include('head.php'); ?>
 
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="image\blood_donationcover.jpeg" alt="" >
+                <img class="img-fluid rounded" src="image/blood_donationcover.jpeg" alt="" >
             </div>
         </div>
         <!-- /.row -->

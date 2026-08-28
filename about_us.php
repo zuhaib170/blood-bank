@@ -43,7 +43,7 @@ include('head.php');
 
     </div>
     <div class="col-lg-6">
-        <img class="img-fluid rounded" src="image\banner_590x300.jpg" style="height:400px" alt="error"  >
+        <img class="img-fluid rounded" src="image/banner_590x300.jpg" style="height:400px" alt="error"  >
     </div>
 </div>
 </div></div>

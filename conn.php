@@ -1,7 +1,7 @@
 <?php
 mysqli_report(MYSQLI_REPORT_OFF);
 
-$conn = mysqli_connect(
+@$conn = mysqli_connect(
 	getenv('DB_HOST') ?: 'localhost',
 	getenv('DB_USER') ?: 'root',
 	getenv('DB_PASSWORD') ?: '',

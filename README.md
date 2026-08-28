@@ -41,6 +41,35 @@ Blood Bank Donation System is a php based web project with both admin and user l
    
 # If you like my project hit the star 🌟 button
 
+# Vercel Deployment
+
+This project uses the community PHP runtime on Vercel. The application still requires a hosted MySQL-compatible database because Vercel does not provide MySQL.
+
+1. Import `https://github.com/zuhaib170/blood-bank` into Vercel.
+2. Leave the framework preset as `Other` and leave the build command empty.
+3. Add these project environment variables in Vercel:
+   - `DB_HOST`
+   - `DB_PORT` (usually `3306`)
+   - `DB_NAME` (use `blood_donation` unless the database name differs)
+   - `DB_USER`
+   - `DB_PASSWORD`
+4. Import `blood_donation.sql` into the hosted database.
+5. Deploy the project.
+
+The Vercel entry point is `api/index.php`; it routes PHP page requests to the existing application pages.
+
+# Render Deployment
+
+Render runs this project with the included `Dockerfile` and `render.yaml` blueprint. The application still requires a hosted MySQL-compatible database; Render's managed PostgreSQL database cannot be used with this project's `mysqli` connection.
+
+1. Push this repository to GitHub.
+2. In Render, choose **New > Blueprint** and select the repository.
+3. Set `DB_HOST`, `DB_USER`, and `DB_PASSWORD` when Render prompts for secret values. The blueprint sets `DB_PORT` to `3306` and `DB_NAME` to `blood_donation`.
+4. Import `blood_donation.sql` into the hosted MySQL database.
+5. Create the service and open its generated `onrender.com` URL.
+
+You can deploy the same repository to either Vercel or Render. Use Vercel's project environment variables with the same database values when deploying there.
+
 # Screenshots
 
 <h3> User Panel Images </h3>

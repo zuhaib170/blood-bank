@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: blood-bank
+    runtime: docker
+    plan: free
+    healthCheckPath: /home.php
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "3306"
+      - key: DB_NAME
+        value: blood_donation
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
